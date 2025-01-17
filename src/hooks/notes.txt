@@ -1,0 +1,41 @@
+ussEffect hooks why are using this Api's call?
+=> The useEffect hook in React is used to perform side effects in functional components. Side effects include things like fetching data, updating the DOM, or setting up subscriptions. It runs after the component renders.
+
+Bsci Sysntax :
+
+useEffect(() => {
+// Side effect logic here
+return () => {
+// Cleanup logic (optional)
+}                           ;
+}, [dependencies])          ;
+
+
+useEffect(()
+=>{return statements},
+[dependencies])
+
+Key Points:
+1.No Dependencies ([]): Runs once after the component mounts.
+2.With Dependencies ([dep1, dep2]): Runs whenever any dependency changes.
+3.No Dependency Array: Runs after every render (use cautiously).
+4.Cleanup Function: Used to clean up resources like event listeners or subscriptions.
+
+
+/// fetch Api's consecpt 
+
+Fetching APIs in JavaScript involves sending HTTP requests to a server to retrieve or manipulate data. This is typically done using the fetch function, which is a modern, promise-based API for making network requests.
+
+
+Fetch API Syntax:
+fetch(url, options)
+    .then(response => response.json()) // Parse the JSON response
+    .then(data => {
+        // Handle the data
+    })
+    .catch(error => {
+        // Handle errors
+    });
+
+
+    
